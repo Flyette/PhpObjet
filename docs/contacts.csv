@@ -1,0 +1,4 @@
+nom;prenom;tel;email;message
+Duran;Paul;00.11.22.33.44;duran@gmail.com;qqq
+Duran;Paul;00.11.22.33.44;duran@gmail.com;"aaa bbb, ccc"
+Dupont;Alain;00.11.22;dupont@gmail.com;"oo pp"

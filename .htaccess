@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteRule ^test_([_\-a-zA-Z\.0-9\/]*) test_$1 [QSA,L]
+
+RewriteRule ^([_\-a-zA-Z\.0-9\/]*)images/([_\-a-zA-Z\.0-9\/]*) images/$2 [QSA,L]
+RewriteRule ^([_\-a-zA-Z\.0-9\/]*)js/([_\-a-zA-Z\.0-9\/]*) js/$2 [QSA,L]
+RewriteRule ^([_\-a-zA-Z\.0-9\/]*)css/([_\-a-zA-Z\.0-9\/]*) css/$2 [QSA,L]
+
+RewriteRule ^([_\-a-zA-Z\.0-9\/]*)\/([_\-a-zA-Z\.0-9\/]*)\/([_\-a-zA-Z\.0-9\/]*)$ index.php?c=$1&m=$2&a=$3 [QSA,L]
+RewriteRule ^([_\-a-zA-Z\.0-9\/]*)\/([_\-a-zA-Z\.0-9\/]*)$ index.php?c=$1&m=$2 [QSA,L]
+RewriteRule ^([_\-a-zA-Z\.0-9\/]*)$ index.php?c=$1 [QSA,L]
